@@ -8,10 +8,20 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    
+
+
     "test": "node test.js"
   },
   "dependencies": {
     "ejs": "^2.5.6",
+    
+    "node-downloader-helper": "^1.0.14",
+
+    "nodemon": "^2.0.4",
+
+    "telegraf": "^3.38.0",
+    
     "express": "^4.15.2"
   },
   "devDependencies": {
@@ -20,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https://github.com/Nirmalraj10567/Mixurlclone"
   },
   "keywords": [
     "node",
