@@ -23,7 +23,7 @@ bot.command("text", async (ctx)=>{
 
     
 
-  const dl = new DownloaderHelper(query1,"./downloads");
+  const dl = new DownloaderHelper(query1,"./public");
 
  const ff= await dl.on("end", () =>ctx.telegram.sendDocument(ctx.chat.id,{source:"./"+dl.getDownloadPath()}))  
 
