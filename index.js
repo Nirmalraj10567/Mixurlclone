@@ -3,7 +3,7 @@
 
 const { Telegraf } = require('telegraf')
 
-const bot = new Telegraf("1323936121:AAHixzno7g60DXEcJ7x0PfgAQZiOAKlnZqU")
+const bot = new Telegraf(process.env.BOT_TOKEN))
 
 const { DownloaderHelper } = require("node-downloader-helper");
 
@@ -25,7 +25,8 @@ bot.command("text", async (ctx)=>{
 
   const dl = new DownloaderHelper(query1,"./public");
 
- const ff= await dl.on("end", () =>ctx.telegram.sendDocument(ctx.chat.id,{source:"./"+dl.getDownloadPath()}))  
+ const ff= await dl.on("end", () =>ctx.telegram.sendDocument(ctx.chat.id,{source:"./"+dl.getDownloadPath()
+}))  
 
   //ctx.telegram.sendDocument(ctx.chat.id,{source:dl.skip.})
 
